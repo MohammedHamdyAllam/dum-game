@@ -14,4 +14,3 @@ otherImage.forEach(function (ele, ind, arr) {
     }
   }
 );
-
