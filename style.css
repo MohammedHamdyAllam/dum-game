@@ -1,0 +1,111 @@
+body{
+  background-color: #222;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+main{
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 875px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 10px;
+  box-shadow: inset 0px -67px 57px 0px #ff9900;
+}
+main a{
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition-property: transform, color;
+  transition-duration: 0.5s;
+}
+main a:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  color: #ff9900;
+}
+.information{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.information .main-image img{
+  width: 500px;
+}
+.information .others-images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.information .others-images img{
+  width: 200px;
+  cursor: pointer;
+}
+.information .games{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.information .requirements{
+  padding: 10px;
+  width: 682px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.information .requirements h3{
+  text-align: center;
+}
+
+footer{
+  background-color: #111;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  main{
+    height: 180px;
+  }
+  .information .main-image img{
+    width: 300px;
+  }
+  .information .requirements{
+    width: 360px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  main{
+    height: 500px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  main{
+    height: 500px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  main{
+    height: 650px;
+  }
+}
